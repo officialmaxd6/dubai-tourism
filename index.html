@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dubai Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar glass">
+        <h1 class="logo">The Dubai Experience</h1>
+        <ul class="nav-links">
+            <li id="pri" class="active cir_border"><a href="#home">Home</a></li>
+            <li id="sec" class="cir_border"><a href="tours.html">Tours</a></li>
+            <li id="tri" class="cir_border"><a href="#explore">Book</a></li>
+            <li id="quad" class="cir_border"><a href="#about">About</a></li>
+            <li class="ctn contact_button"><a href="#contact">Contact</a></li>
+        </ul>
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+    </nav>
+    <!--navbar-->
+
+    <header class="home" id="home">
+        <div class="header-content">
+            <h2>Explore the the beauty of Dubai</h2>
+            <div class="line"></div>
+            <h1>EXPERIENCE THE BEST TIME OF YOUR LIFE</h1>
+            <a href="gallery/gallery.html" class="ctn" target="_blank">View Gallery</a>
+        </div>
+    </header>
+
+    
+
+    <!-- About -->
+    <section id="about">
+        <div class="title">
+            <h1 class="font-color">About Us</h1>
+            <div class="line"></div>
+        </div>
+        <div id="about_us">
+            <div class="boxx">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi asperiores deleniti dolor, provident veritatis libero quo voluptatibus repellat nostrum, accusantium expedita assumenda placeat? Fugit, magni aliquid eaque dolorum dolore, deleniti ea molestiae ducimus atque doloribus ipsam repellendus assumenda ullam tenetur vero perferendis quam corporis, nam dolores distinctio libero esse. Quaerat libero facilis nam, tempore natus optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur incidunt doloribus quaerat placeat harum nesciunt sequi cupiditate. Libero neque voluptatum ea fugit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About -->
+    
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="title">
+            <h1 class="font-color">Contact Us</h1>
+            <div class="line"></div>
+        </div>
+        <div class="contact_us">
+            <form action="" method="post">
+                <div class="c">
+                    <div class="ccol">
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="ccol">
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="ccol">
+                        <input type="text" id="email" name="email" placeholder="Your Email id">
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="ccol">
+                        <select name="country" id="country">
+                            <option value="India">Dubai</option>
+                            <option value="Russia">Russia</option>
+                            <option value="usa">USA</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Nigeria">Nigeria</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="c">
+                    <div class="ccol">
+                        <label for="remarks">Remarks</label>
+                    </div>
+                    <div class="ccol">
+                        <textarea type="text" id="remarks" name="remarks" placeholder="Your Remarks....." style="height: 150px;"></textarea>
+                    </div>
+                </div>
+                <div class="c-s">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+            <div class="cbox">
+                <div class="c_boxx">
+                    <h4>Our Email</h4>
+                    <a href="mailto:abc@gmail.com"><i class="fa fa-envelope"></i><p> abc@gmail.com</p></a>
+                    
+                </div>
+                <div class="c_boxx">
+                    <h4>Our Contact no</h4>
+                    <a href="tel:"><i class="fa fa-phone"></i><p> +2348177664995</p></a>
+                    
+                </div>
+                <div class="c_boxx">
+                    <h4>Our Location</h4>
+                    <a href="#"><i class="fa fa-map-marker"></i><p> Dubai</p></a>
+                    
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- contact  -->
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>{
+            navlinks.classList.toggle('mobile-menu')
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

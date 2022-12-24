@@ -1,0 +1,41 @@
+/* CSS for the gallery */
+body {
+    background-color: lightblue;
+  }
+
+#image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    object-fit: cover;
+    justify-content: space-around;
+    /* Add any other desired styles for the gallery container */
+  }
+
+  #image-gallery img {
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Set the height of the images */
+    object-fit: cover; /* Scale the images to cover the entire container, preserving the aspect ratio */
+    border: 1px solid #ccc; /* Add a border around the images */
+    border-radius: 5px;
+  }
+  
+  .image {
+    /* Add styles for each image container, such as width, height, margin, etc. */
+    width: 200px; /* Set the width of the images */
+    height: 200px; /* Set the height of the images */
+    object-fit: cover; /* Scale the images to cover the entire container, preserving the aspect ratio */
+    border: 1px solid #ccc; /* Add a border around the images */
+    border-radius: 5px;
+    margin: 10px;
+  }
+  
+  .image img {
+    /* Add styles for the images, such as width, height, etc. */
+    width: 200px; /* Set the width of the images */
+  height: 200px; /* Set the height of the images */
+  object-fit: cover; /* Scale the images to cover the entire container, preserving the aspect ratio */
+  border: 1px solid #ccc; /* Add a border around the images */
+  border-radius: 5px
+  }
+  
+  
